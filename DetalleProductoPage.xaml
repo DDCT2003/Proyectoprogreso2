@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyectoprogreso2.DetalleProductoPage"
+             Title="DetalleProductoPage">
+    <VerticalStackLayout>
+        <Image Source= "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8AAAAwMDAODg75+fnQ0ND29vZbW1teXl7i4uLY2Njx8fEzMzPOzs5OTk4+Pj5paWk5OTl1dXXBwcFDQ0OTk5OxsbElJSWcnJy6urrl5eVSUlJ+fn5JSUkrKyvFxcWDg4MYGBiNjY2jo6OsrKxwcHBMGy+OAAAG7ElEQVR4nO2d2WLqIBBAtS6tRq1rjHYxdvn/X7zXRm0SZoDAACGd85wip+x7r8cwDMMwDMMwDMMwDMMwDMMwDBM908NuuVjNHtwyWy2Wu8PUv1227ftlm3m0nOxWnvUKZruJF7/RMohewdPIud/0JaDfhTe3mTV5Dex3YZ24E0zPoe1+GKSuBNeh1e6snfhN3kN7ldg7qFVHoaVqkFeqp9BGApuuC/b7J0rBtmXRAsKMOgntgkBX3bSpFi3zTiXYnnawDlG7mIb2kEDSu0kGoTUkDCj6qKrO9sAtil9/tRec4qHv843Dbv6d4ybf45GwH0wtsKA9DEZ/mT9h0VjYBo219Vuffj8ReUZiYhsR5H/3QRLrZuyQvGQXKtKbIe71arKBI2PXs4H/b3OiKDdlDsZmZxXmrD0peAEc4qxsQgSbihBl8MYHdTbNgPCeyaJrAlSjZhbhQVP3vpuJKlDr9WYRHhCcZeVsDdR8mYcGFcOwSQjXp+Y9t4MY2J4wsmYAfdSDcWBAa5iTxdSUXIyUeVUDrDKFawtvAD2bpXFgb2JgPoZLco5ipMzHF8BCKGFUTREjZd6rAfpshDE1RYzUzDisByGsAWFM6ySb9KDTARMnNh6Mf9OnYXrtj+XKkh6n4bHU31S1blEaVuvHT/nHMRqOz9Vfka8qxWgodFOkX0domAg/I52sj9DwS/gZaSclQkNx3WA/lnweoeGj8DP9o+RzNmyCJ0NxxNe1XCrWNC+yzyM0FFuLL9nnERqKlan06xgNx7XZpe712mpLXIqJpSgNe8fShEknR0//Sa/bkro6Ar4wOW1OOrPX8RrqwoZNMDQcJvOvzyz7/DolQ+PfxglteEy/z6U/WGbkO7LDGm6A5b2XlDYlQxoekI2oA8XsWTPCGc4lu88slvgEQhmOFftsH8lWrQIZTmUJWPwp1d76MIbiIBbAbvPSnSCGyKa6Ot/GMSkTwlD7zB7JVpUAhg0OJT4ax+UX/4aNDitYb+kNYNjwWKl0Gk0L34aNz81aZ1TPhgYHg20V/RoaHRiyLIteDQ2Pdtulok9D47PrVooeDS3OtNnUqP4MZYLLw2i0WZ8NFZPpV75evjyt8+wkrrN5M5Rk0ducZwLtE7+CZtRj9lhx2L7WDj/4MpQIlrYRSw7xw4onYLm0v8/K8yCeDPEs+lwd6uI3hQCNxgk833Fh97tm6scQT8FtffkWPXUmpOIE/7TfP993oHgxxAVn4rwanopVRUmhLb5O/Bnigito4hAqWgWlGnWMf3X/8bkvQ7wMClm0AM9997I4OSsF+9c9fe4N8RR8xrZQ4Olzzai6lzZ8+DDEBR/wuW1FWYSP3UG8ujeUNBOyyXtpWWxyr8jaseE7cJ7jClIGb0gajWYXp+RiJ4I0DdEfXskFZRm1IW7TEAVoB50pBjHc6iygybosbTdEm4kq6ka9rYaSZqKKo4zq3BDsqsG4SUXXhopmokqDsrjXvjbGsaFmGbyhmYrr+TFJpplyVdKDoXYZvKFTFh/vszOqIZV7Q2lXDUadUcubE3UuM3Rp2KgM6ipWT+Im6vt8HRoqu2ow8oxaX+8fKu/0dWfYoJmoIqtuxItTlIrODI2yaAGeUaErIIaKjOrKsGEzUUU56q8wlis6MmzcTFTRnYErGMqjYhwLWbAGzUQVrRm4O0PsIixnhhZl8AZeFiFFWUZ1YWjYTFRBr4KDyyKeig4MLcvgDTzOYFlEFzXoDbVG9DrgqQit9aONBrkhQRm80ay6wcoitaHGpJM+DRsNuHdDbGjcVYOhaDRoDQmzaIHGsk0JsCySGlp11WAaduCAVCQ1dHFEBC+LOfD10K2hm1NBeCpCJ71Cn5kxAlWE7riK0hDPqECpiNMQVQSu+IvUEMuowC0nsRoiisBpomgN4YzaoVzag1OxOzXND2IHrjutxRUhFTvT4t+plcUc+iZuw2pGhY9JRW5Yvo4nh7+I3bA3vd4Lu8TuV4je8P/4aJSmI3yYRmnY/ftLu38HLTCdKbtmzA+k9wh3/y7o7t/n3f072aF79UO9T3KD9l797r+N8Afet+j+GyXdf2embW8FgS8+Wb0V9Afee+r+m11tencNLIM2XbYC7MjVc2fezpO8f+izNDp8/1DxhqWPwZTrNyy7/w7pH3hLtvvvAf+BN53/wLvc0ORPKyCsyXWPWvuFtNPR7KiuH6juYWytIrFg+zKqg37xsU016rub7mJ72kWydrBOeg6t9sOAqCcDkRjfX0bIq9tXJqfu7g3QY0EwXFIwAlakvPHkZ2phspMdQnLHbEd+v7tEMgNeYXXKG/319Uqmh2y5WM0e3DJbLZbZwX3hYxiGYRiGYRiGYRiGYRiGYRiGcc4/NxVo82/qDTMAAAAASUVORK5CYII="
+           HorizontalOptions="Center"
+           HeightRequest="200"/>
+        <Label x:Name="Nombre"
+           Text="Nombre"
+           FontSize="32"
+           HorizontalOptions="Center"/>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Cantidad: "
+                FontSize="18"/>
+            <Label x:Name="Cantidad"
+                Text="Cantidad"
+                FontSize="18"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Descripción: "
+                FontSize="18"/>
+            <Label x:Name="Descripcion"
+                Text="Descripcion"
+                FontSize="18"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+         
+        </StackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>
