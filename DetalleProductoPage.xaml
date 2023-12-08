@@ -9,25 +9,55 @@
            HorizontalOptions="Center"
            HeightRequest="200"/>
         <Label x:Name="Nombre"
+               FontAttributes="Bold"
            Text="Nombre"
            FontSize="32"
            HorizontalOptions="Center"/>
         <StackLayout Orientation="Horizontal">
             <Label Text="Cantidad: "
-                FontSize="18"/>
+                FontSize="18" FontAttributes="Bold"/>
             <Label x:Name="Cantidad"
                 Text="Cantidad"
                 FontSize="18"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
             <Label Text="Descripción: "
-                FontSize="18"/>
+                   FontAttributes="Bold"
+           FontSize="18"/>
             <Label x:Name="Descripcion"
-                Text="Descripcion"
-                FontSize="18"/>
+           Text="Descripcion"
+           FontSize="18"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-         
+            <Label Text="Color: "
+                   FontAttributes="Bold"
+                FontSize="18"/>
+            <Label x:Name="Color"
+                Text="Color"
+                FontSize="18"/>
+        </StackLayout>
+     
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Añadir"
+        
+             FontSize="20"
+             Margin="5"
+             HorizontalOptions="FillAndExpand"
+             TextColor="White"
+             CornerRadius="50"
+             BackgroundColor="Red" 
+             />
+            <Button Text="Salir"
+                        Clicked="OnClickSalir"
+                FontSize="20"
+                Margin="5"
+                HorizontalOptions="FillAndExpand"
+                TextColor="White"
+                BackgroundColor="Black"
+                    BorderColor="Red"
+                    
+                    CornerRadius="50"/>
+            
         </StackLayout>
 
     </VerticalStackLayout>

@@ -17,7 +17,12 @@ public partial class ProductoPage : ContentPage
 
     private async void Btn_Buscar(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new DetalleProductoPage(_ApiService));
+
+
+        ProductoColorTalla p = await _ApiService.GetProducto(Int32.Parse(ID.Text));
+        await Navigation.PushAsync(new DetalleProductoPage(_ApiService){
+            BindingContext = p,
+        });
     }
 
 
@@ -32,7 +37,7 @@ public partial class ProductoPage : ContentPage
     private async void OnClickShowDetails(object sender, SelectedItemChangedEventArgs e)
     {
      
-        Producto producto = e.SelectedItem as Producto;
+        ProductoColorTalla producto = e.SelectedItem as ProductoColorTalla;
         await Navigation.PushAsync(new DetalleProductoPage(_ApiService)
         {
             BindingContext = producto,

@@ -1,5 +1,6 @@
 using Proyectoprogreso2.Models;
 using Proyectoprogreso2.Service;
+using System.Collections.ObjectModel;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Proyectoprogreso2;
@@ -18,8 +19,21 @@ public partial class DetalleProductoPage : ContentPage
     {
         base.OnAppearing();
         _producto = BindingContext as ProductoColorTalla;
-      //  Nombre.Text = _producto.Nombre;
-      //  Cantidad.Text = _producto.Cantidad.ToString();
-      //  Descripcion.Text = _producto.Descripcion;
+        Nombre.Text = _producto.Producto.nombre;
+        Cantidad.Text = _producto.stock.ToString();
+        Descripcion.Text = _producto.Producto.descripcion;
+        Color.Text = _producto.ColorProducto.nombre;
+    }
+
+    private async void OnClickSalir(object sender, EventArgs e)
+    {
+       
+        List<ProductoColorTalla> listaProducto = await _ApiService.GetProductos();
+        var products = new ObservableCollection<ProductoColorTalla>(listaProducto);
+        await Navigation.PushAsync(new ProductoPage(_ApiService)
+        {
+            BindingContext = products,
+        });
+       
     }
 }

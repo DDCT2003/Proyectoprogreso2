@@ -30,7 +30,7 @@ namespace Proyectoprogreso2.Service
 
         public async Task<bool> DeleteProducto(int IdProducto)
         {
-            var response = await _httpClient.DeleteAsync($"/api/Producto/{IdProducto}");
+            var response = await _httpClient.DeleteAsync($"/api/ProductoColorTalla/{IdProducto}");
             if (response.StatusCode == HttpStatusCode.NoContent)
             {
                 return true;
@@ -38,16 +38,16 @@ namespace Proyectoprogreso2.Service
             return false;
         }
 
-        public async Task<Producto> GetProducto(int IdProducto)
+        public async Task<ProductoColorTalla> GetProducto(int IdProducto)
         {
             var response = await _httpClient.GetAsync($"/api/ProductoColorTalla/{IdProducto}");
             if (response.IsSuccessStatusCode)
             {
                 var json_response = await response.Content.ReadAsStringAsync();
-                Producto producto = JsonConvert.DeserializeObject<Producto>(json_response);
+                ProductoColorTalla producto = JsonConvert.DeserializeObject<ProductoColorTalla>(json_response);
                 return producto;
             }
-            return new Producto();
+            return new ProductoColorTalla();
         }
 
         public async Task<List<ProductoColorTalla>> GetProductos()
