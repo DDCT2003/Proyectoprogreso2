@@ -972,3 +972,10 @@ C:\Users\DYLAN\source\repos\Proyectoprogreso2\obj\Debug\net7.0-android\android\a
 C:\Users\DYLAN\source\repos\Proyectoprogreso2\obj\Debug\net7.0-android\android\assets\System.Runtime.Serialization.Formatters.dll
 C:\Users\DYLAN\source\repos\Proyectoprogreso2\obj\Debug\net7.0-android\android\assets\System.Xml.dll
 C:\Users\DYLAN\source\repos\Proyectoprogreso2\obj\Debug\net7.0-android\android\assets\Newtonsoft.Json.dll
+C:\Users\DYLAN\source\repos\Proyectoprogreso2\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Maui.Core.dll
+C:\Users\DYLAN\source\repos\Proyectoprogreso2\obj\Debug\net7.0-android\android\assets\CommunityToolkit.Maui.dll
+C:\Users\DYLAN\source\repos\Proyectoprogreso2\obj\Debug\net7.0-android\android\src\crc64159f3caeb1269279\MauiDrawingView.java
+C:\Users\DYLAN\source\repos\Proyectoprogreso2\obj\Debug\net7.0-android\android\src\crc64159f3caeb1269279\MauiPopup.java
+C:\Users\DYLAN\source\repos\Proyectoprogreso2\obj\Debug\net7.0-android\android\src\crc64159f3caeb1269279\MauiSemanticOrderView.java
+C:\Users\DYLAN\source\repos\Proyectoprogreso2\obj\Debug\net7.0-android\android\src\crc648fc34c62be8fbbff\Snackbar_SnackbarCallback.java
+C:\Users\DYLAN\source\repos\Proyectoprogreso2\obj\Debug\net7.0-android\android\src\crc64d6358e7bf64fbac4\SpeechToTextImplementation_SpeechRecognitionListener.java

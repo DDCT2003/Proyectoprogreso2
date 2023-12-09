@@ -88,5 +88,30 @@ namespace Proyectoprogreso2.Service
             }
             return new Producto();
         }
+        public async Task<Usuario> GetUsuario(string Usu, string Contra)
+        {
+            var response = await _httpClient.GetAsync($"/api/Cliente/{Usu}/{Contra}");
+            if (response.IsSuccessStatusCode)
+            {
+                var json_response = await response.Content.ReadAsStringAsync();
+                Usuario usu = JsonConvert.DeserializeObject<Usuario>(json_response);
+                return usu;
+            }
+            return null;
+        }
+
+        public async Task<Cliente> PostCliente(Cliente cliente)
+        {
+            var content = new StringContent(JsonConvert.SerializeObject(cliente), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PostAsync("/api/Cliente/", content);
+            if (response.IsSuccessStatusCode)
+            {
+                var json_response = await response.Content.ReadAsStringAsync();
+                Cliente cliente1 = JsonConvert.DeserializeObject<Cliente>(json_response);
+                return cliente1;
+            }
+            return new Cliente();
+        }
+
     }
 }

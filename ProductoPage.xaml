@@ -20,12 +20,12 @@
                 TextColor="Red"/>
         </HorizontalStackLayout>
 
-        <HorizontalStackLayout HorizontalOptions="Center">
-            <TableView HorizontalOptions="FillAndExpand">
+        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+            <TableView HorizontalOptions="CenterAndExpand" >
                 <TableRoot>
                     <TableSection Title="Ingrese el ID  del producto:" TextColor="Red" >
                         <EntryCell x:Name="ID"
-                              Placeholder="ID" LabelColor="Black" />
+                              Placeholder="ID" LabelColor="Black" HorizontalTextAlignment="Center" />
 
                     </TableSection>
                 </TableRoot>

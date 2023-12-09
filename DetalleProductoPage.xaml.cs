@@ -27,13 +27,8 @@ public partial class DetalleProductoPage : ContentPage
 
     private async void OnClickSalir(object sender, EventArgs e)
     {
-       
-        List<ProductoColorTalla> listaProducto = await _ApiService.GetProductos();
-        var products = new ObservableCollection<ProductoColorTalla>(listaProducto);
-        await Navigation.PushAsync(new ProductoPage(_ApiService)
-        {
-            BindingContext = products,
-        });
-       
+
+        await Navigation.PopAsync();
+
     }
 }
